@@ -1,0 +1,21 @@
+How to Integrate this Code
+Would update your api_main.py as follows:
+
+Create the file: Save the code above as transaction_models.py.
+
+Update imports in api_main.py: Replace the old, simple Pydantic models with the imports from your new file.
+
+In old api_main.py:
+
+# from pydantic import BaseModel 
+# class TransactionIn(BaseModel): ...
+# class ClassificationOut(BaseModel): ...
+
+In new api_main.py:
+
+Python
+
+from transaction_models import TransactionIn, ClassificationOut 
+
+# ... (The rest of your code remains the same, using the imported models)
+This modular approach makes your code cleaner and easier to maintain the data structure, which is a key part of your System Architecture and Data Model
