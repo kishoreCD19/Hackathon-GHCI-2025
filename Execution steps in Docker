@@ -1,0 +1,18 @@
+Installation:
+
+pip install -r requirements.txt
+
+Train the model : 
+
+python train_model.py
+
+Run the API : 
+
+uvicorn api_main:app --reload
+
+Test the End point : 
+
+{
+  "raw_description": "AMAZON PRIME SUBSCRIPTION",
+  "amount": 14.99
+}
